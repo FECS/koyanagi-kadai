@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source module &apos;Hallo.rb&apos; to &apos;Hello.rb&apos;&#x0A;- Original element: &apos;(default package)::Hallo.rb&apos;&#x0A;- Renamed element: &apos;(default package)::Hello.rb&apos;" description="Rename source module &apos;Hallo.rb&apos;" flags="589830" id="org.eclipse.dltk.ui.rename.sourcemodule" input="/&lt;{Hallo.rb" name="Hello.rb" stamp="1401121376597" version="1.0"/>
+</session>
