@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.dltk.ruby.formatter.RubyFormatterFactory">
+		<item value="592" key="height"/>
+		<item value="879" key="width"/>
+		<item value="22" key="y"/>
+		<item value="149" key="x"/>
+	</section>
+</section>

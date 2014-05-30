@@ -1,0 +1,39 @@
+require 'net/http'
+require 'uri'
+require 'json'
+
+class Hello
+  GOOGLE_URL='http://www.example.com/index.html'
+  ANIMEMAP_URL="http://animemap.net/api/table/tokyo.json"
+
+  def sayHallo
+    p "Hello World!"
+  end
+  
+  def getJSON html=ANIMEMAP_URL
+    uri = URI.parse('http://www.example.com/sample.json')
+    json = Net::HTTP.get(uri)
+    result = JSON.parse(json)
+
+  end
+  def showGoogle
+    showHtml(GOOGLE_URL)
+  end
+
+  def showAnimeMap
+    showHtml(ANIMEMAP_URL)
+  end
+  private
+
+  def showHtml html
+    Net::HTTP.get_print getHtml(html)
+  end
+
+  def getHtml html
+    URI.parse html
+  end
+end
+
+h=Hello::new
+h::sayHallo
+h.showAnimeMap()
