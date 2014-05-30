@@ -73,7 +73,7 @@ class Hello
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***here's data***"
       puts "▲▲▲▲▲▲▲▲▲"
-      puts data.inspect()
+      puts data
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***thanks***"
       puts "▲▲▲▲▲▲▲▲▲"

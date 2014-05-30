@@ -1,6 +1,7 @@
 # coding: utf-8
 require 'net/http'
 require 'uri'
+require 'date'
 
 class Hello
   GOOGLE_URL="http://www.example.com/index.html"
@@ -75,6 +76,10 @@ class Hello
       puts "▲▲▲▲▲▲▲▲▲"
       puts data.inspect()
       puts "▼▼▼▼▼▼▼▼▼"
+      puts "*and the date is*"
+      puts "▲▲▲▲▲▲▲▲▲"
+      showDate data
+      puts "▼▼▼▼▼▼▼▼▼"
       puts "***thanks***"
       puts "▲▲▲▲▲▲▲▲▲"
     else
@@ -83,6 +88,46 @@ class Hello
       puts "▲▲▲▲▲▲▲▲▲"
       waitForPutTitle
     end
+  end
+
+  def showDate hash
+    arr = ["日","月","火","水","木","金","土"]
+    arr.each{|s|
+      s<<"曜日"
+    }
+    week=nil
+    arr.length.times{|i|
+      if(arr[i]==hash["week"])
+        week=i
+        break
+      end
+    }
+    unless(week)
+      puts "▼▼▼▼▼▼▼▼▼"
+      puts "***ERROR***"
+      puts "▲▲▲▲▲▲▲▲▲"
+      puts hash["week"][0,1]
+      puts "▼▼▼▼▼▼▼▼▼"
+      puts "***ERROR***"
+      puts "▲▲▲▲▲▲▲▲▲"
+      return
+    end
+    date=Date.today()
+    delt=week-date.wday
+delt+=7 if delt<0
+    h,m=hash["time"].split(":")
+    if(m>=60)
+      m-=60
+      h+=1
+    end
+    if(h>=24)
+      h-=24
+      delt+=1
+    end
+    date=date+delt
+
+    date= Time.local(date.year, date.month, date.day, h, m, 00)
+    puts date.strftime("%Y/%m/%d %H:%M:%S")
   end
 
   def getJSONinString html=ANIMEMAP_URL

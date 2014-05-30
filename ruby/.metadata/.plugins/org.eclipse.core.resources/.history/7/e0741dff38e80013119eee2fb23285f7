@@ -1,6 +1,7 @@
 # coding: utf-8
 require 'net/http'
 require 'uri'
+require 'date'
 
 class Hello
   GOOGLE_URL="http://www.example.com/index.html"
@@ -75,6 +76,10 @@ class Hello
       puts "▲▲▲▲▲▲▲▲▲"
       puts data.inspect()
       puts "▼▼▼▼▼▼▼▼▼"
+      puts "*and the date is*"
+      puts "▲▲▲▲▲▲▲▲▲"
+      showDate data
+      puts "▼▼▼▼▼▼▼▼▼"
       puts "***thanks***"
       puts "▲▲▲▲▲▲▲▲▲"
     else
@@ -83,6 +88,18 @@ class Hello
       puts "▲▲▲▲▲▲▲▲▲"
       waitForPutTitle
     end
+  end
+  def showDate hash
+    date=Date.today()
+    date.wday
+    weeks=["日","月","火","水","木","金","土"]
+    case hash["week"][0,1]
+    when "日"
+      comparison1_body
+    when comparison2
+      comparison2_body
+    end
+    date.strftime("%Y/%m/%d %H:%M:%S")
   end
 
   def getJSONinString html=ANIMEMAP_URL

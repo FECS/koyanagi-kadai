@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="1626" environment="org.eclipse.dltk.core.environment.localEnvironment">
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="1630" environment="org.eclipse.dltk.core.environment.localEnvironment">
   <entries path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/ext/change-ws.rb" timestamp="1397537495000" lastAccessTime="1401479461307">
     <attributes name="indexed" location="2838196607/2423485940/1439.idx"/>
   </entries>
@@ -2303,10 +2303,13 @@
   <entries path="/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/RubyTest-Eclipse/Task6/Copy_2_of_Task6.rb" timestamp="1401476797000" lastAccessTime="1401476933677">
     <attributes name="indexed" location="2838196607/2996724362/1619.idx"/>
   </entries>
-  <entries path="/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/RubyTest-Eclipse/Task6" timestamp="1401476797000" lastAccessTime="1401480234155">
+  <entries path="/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/RubyTest-Eclipse/Task6" timestamp="1401476797000" lastAccessTime="1401481129757">
     <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/322008143/1615.idx"/>
   </entries>
   <entries path="/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/RubyTest-Eclipse/Task6/CopyOfTask6.rb" timestamp="1401469270000" lastAccessTime="1401476933675">
     <attributes name="indexed" location="2838196607/2996724362/1617.idx"/>
+  </entries>
+  <entries path="/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/RubyTest-Eclipse/Task7" timestamp="1401480453000" lastAccessTime="1401483127650">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/322008143/1629.idx"/>
   </entries>
 </cache:CacheIndex>

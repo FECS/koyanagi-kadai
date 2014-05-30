@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'net/http'
 require 'uri'
-
+require 'date'
 class Hello
   GOOGLE_URL="http://www.example.com/index.html"
   ANIMEMAP_URL="http://animemap.net/api/table/tokyo.json"
@@ -73,7 +73,7 @@ class Hello
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***here's data***"
       puts "▲▲▲▲▲▲▲▲▲"
-      puts data.inspect()
+      puts data
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***thanks***"
       puts "▲▲▲▲▲▲▲▲▲"

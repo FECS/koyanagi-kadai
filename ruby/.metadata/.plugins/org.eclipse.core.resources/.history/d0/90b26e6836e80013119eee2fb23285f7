@@ -1,6 +1,7 @@
 # coding: utf-8
 require 'net/http'
 require 'uri'
+require 'date'
 
 class Hello
   GOOGLE_URL="http://www.example.com/index.html"
@@ -73,7 +74,7 @@ class Hello
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***here's data***"
       puts "▲▲▲▲▲▲▲▲▲"
-      puts data.inspect()
+      puts data
       puts "▼▼▼▼▼▼▼▼▼"
       puts "***thanks***"
       puts "▲▲▲▲▲▲▲▲▲"
