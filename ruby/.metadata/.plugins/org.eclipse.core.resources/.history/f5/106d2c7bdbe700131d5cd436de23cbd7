@@ -1,0 +1,7 @@
+class String
+  def sayHello
+    p "sayHello"
+  end
+end
+
+"abc".sayHello

@@ -5,5 +5,4 @@ class Hello
 end
 Hello::new::sayHallo
 
-a=Test2.new
 "".sayHello()

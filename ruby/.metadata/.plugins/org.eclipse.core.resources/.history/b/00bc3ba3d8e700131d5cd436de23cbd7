@@ -1,0 +1,11 @@
+class String
+  def sayHello
+    p "sayHello"
+  end
+end
+
+s=String.new
+p s
+p s.class
+p s.sayHello
+p "abc".sayHello

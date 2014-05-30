@@ -5,5 +5,5 @@ class Hello
 end
 Hello::new::sayHallo
 
-a=Test2.new
+Test2.rb.new
 "".sayHello()
