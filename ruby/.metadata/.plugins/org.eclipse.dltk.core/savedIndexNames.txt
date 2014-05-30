@@ -1,2 +1,1 @@
-/Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/.metadata/.plugins/org.eclipse.dltk.core/671487691.index
 /Users/koyanagihirogayume/Documents/koyanagi-kadai/ruby/.metadata/.plugins/org.eclipse.dltk.core/1492766893.index
