@@ -1,0 +1,22 @@
+require 'net/http'
+require 'uri'
+
+class Hello
+  def sayHallo
+    p "Hello World!"
+  end
+
+  def showGoogle
+    Net::HTTP.get_print URI.parse('http://www.example.com/index.html')
+  end
+  private
+
+  def getHtml html
+    URI.parse html
+  end
+end
+
+Hello::new::sayHallo
+
+a=Test2.new
+"".sayHello()

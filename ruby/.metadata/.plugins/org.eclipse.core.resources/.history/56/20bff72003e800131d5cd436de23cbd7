@@ -1,0 +1,27 @@
+require 'net/http'
+Net::HTTP.get_print 'www.example.com', '/index.html'
+例2: URI を使う
+
+require 'net/http'
+require 'uri'
+Net::HTTP.get_print URI.parse('http://www.example.com/index.html')
+例3: より汎用的な例
+
+require 'net/http'
+require 'uri'
+
+url = URI.parse('http://www.example.com/index.html')
+res = Net::HTTP.start(url.host, url.port) {|http|
+  http.get('/index.html')
+}
+puts res.body
+例4: 上の例よりさらに汎用的な例
+
+require 'net/http'
+
+url = URI.parse('http://www.example.com/index.html')
+req = Net::HTTP::Get.new(url.path)
+res = Net::HTTP.start(url.host, url.port) {|http|
+  http.request(req)
+}
+puts res.body
