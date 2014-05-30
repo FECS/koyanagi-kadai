@@ -7,7 +7,7 @@ class Hello
   end
 
   def showGoogle
-    Net::HTTP.get_print getHtml('http://google.co.jp')
+    Net::HTTP.get_print getHtml('http://www.example.com/index.html')
   end
   private
 
