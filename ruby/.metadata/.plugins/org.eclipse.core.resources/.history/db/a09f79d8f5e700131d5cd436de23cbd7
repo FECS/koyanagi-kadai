@@ -1,0 +1,6 @@
+module HelloModule
+  module_function sayHello
+  def sayHello
+    p "Hello World!!"
+  end
+end

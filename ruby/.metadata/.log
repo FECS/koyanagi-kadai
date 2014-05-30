@@ -33,3 +33,48 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2014-05-30 10:59:06.901
 !MESSAGE System property https.proxyPort has been set to 3128 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.dltk.launching 4 100 2014-05-30 21:30:07.441
+!MESSAGE Debugging Engine not started
+!STACK 1
+org.eclipse.core.runtime.CoreException: The 'Fast Ruby Debugger (ruby-debug)' is selected, but the 'ruby-debug' or 'debugger' gems don't seem to be installed in the selected Ruby Interpreter (/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby)
+	at org.eclipse.dltk.launching.AbstractInterpreterRunner.abort(AbstractInterpreterRunner.java:109)
+	at org.eclipse.dltk.ruby.fastdebugger.FastDebuggerRunner.checkRubyDebug(FastDebuggerRunner.java:187)
+	at org.eclipse.dltk.ruby.fastdebugger.FastDebuggerRunner.checkConfig(FastDebuggerRunner.java:181)
+	at org.eclipse.dltk.launching.AbstractInterpreterRunner.rawRun(AbstractInterpreterRunner.java:203)
+	at org.eclipse.dltk.launching.DebuggingEngineRunner.startProcess(DebuggingEngineRunner.java:171)
+	at org.eclipse.dltk.launching.DebuggingEngineRunner.run(DebuggingEngineRunner.java:140)
+	at org.eclipse.dltk.internal.launching.DebugRunnerDelegate.run(DebugRunnerDelegate.java:54)
+	at org.eclipse.dltk.launching.AbstractScriptLaunchConfigurationDelegate.runRunner(AbstractScriptLaunchConfigurationDelegate.java:998)
+	at org.eclipse.dltk.launching.AbstractScriptLaunchConfigurationDelegate.launch(AbstractScriptLaunchConfigurationDelegate.java:954)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.dltk.launching 4 100 2014-05-30 21:30:07.444
+!MESSAGE The 'Fast Ruby Debugger (ruby-debug)' is selected, but the 'ruby-debug' or 'debugger' gems don't seem to be installed in the selected Ruby Interpreter (/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby)
+
+!ENTRY org.eclipse.dltk.launching 4 100 2014-05-30 21:32:52.275
+!MESSAGE Debugging Engine not started
+!STACK 1
+org.eclipse.core.runtime.CoreException: The 'Fast Ruby Debugger (ruby-debug)' is selected, but the 'ruby-debug' or 'debugger' gems don't seem to be installed in the selected Ruby Interpreter (/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby)
+	at org.eclipse.dltk.launching.AbstractInterpreterRunner.abort(AbstractInterpreterRunner.java:109)
+	at org.eclipse.dltk.ruby.fastdebugger.FastDebuggerRunner.checkRubyDebug(FastDebuggerRunner.java:187)
+	at org.eclipse.dltk.ruby.fastdebugger.FastDebuggerRunner.checkConfig(FastDebuggerRunner.java:181)
+	at org.eclipse.dltk.launching.AbstractInterpreterRunner.rawRun(AbstractInterpreterRunner.java:203)
+	at org.eclipse.dltk.launching.DebuggingEngineRunner.startProcess(DebuggingEngineRunner.java:171)
+	at org.eclipse.dltk.launching.DebuggingEngineRunner.run(DebuggingEngineRunner.java:140)
+	at org.eclipse.dltk.internal.launching.DebugRunnerDelegate.run(DebugRunnerDelegate.java:54)
+	at org.eclipse.dltk.launching.AbstractScriptLaunchConfigurationDelegate.runRunner(AbstractScriptLaunchConfigurationDelegate.java:998)
+	at org.eclipse.dltk.launching.AbstractScriptLaunchConfigurationDelegate.launch(AbstractScriptLaunchConfigurationDelegate.java:954)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.dltk.launching 4 100 2014-05-30 21:32:52.276
+!MESSAGE The 'Fast Ruby Debugger (ruby-debug)' is selected, but the 'ruby-debug' or 'debugger' gems don't seem to be installed in the selected Ruby Interpreter (/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby)
+
+!ENTRY org.eclipse.dltk.ui 4 10001 2014-05-30 21:53:21.050
+!MESSAGE preference option missing: org.eclipse.dltk.ruby.formatter/formatter.profiles.active (org.eclipse.dltk.ui.formatter.AbstractFormatterPreferencePage$FormatterSelectionBlock)

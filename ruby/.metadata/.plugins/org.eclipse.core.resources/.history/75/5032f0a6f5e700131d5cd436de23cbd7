@@ -1,0 +1,9 @@
+str="foo"
+def str.helloWorld
+  HelloModule.sayHello
+end
+
+class String
+  include HelloModule
+end
+

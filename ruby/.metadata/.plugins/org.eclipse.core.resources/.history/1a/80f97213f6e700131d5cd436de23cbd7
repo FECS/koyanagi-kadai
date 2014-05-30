@@ -1,0 +1,20 @@
+module HelloModule
+  def sayHello
+    p "Hello World!!"
+  end
+  module_function :sayHello
+end
+
+str="foo"
+def str.helloWorld
+  p self
+#  HelloModule.sayHello
+end
+
+str.helloWorld
+
+class String
+  include HelloModule
+end
+
+"bar".sayHello()

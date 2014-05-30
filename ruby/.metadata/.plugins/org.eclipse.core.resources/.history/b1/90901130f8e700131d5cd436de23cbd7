@@ -1,0 +1,6 @@
+module HelloModule
+  def sayHello
+    p "I'm"+self+"Hello World!!"
+  end
+  module_function :sayHello
+end

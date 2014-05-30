@@ -1,0 +1,18 @@
+require "module-test/HelloModule.rb"
+
+str="foo"
+
+def str.sayHello
+  HelloModule.sayHello self
+end
+
+str.sayHello
+
+class String
+  def sayHello
+    include HelloModule
+    HelloModule.sayHello self
+  end
+end
+
+"bar".sayHello self
