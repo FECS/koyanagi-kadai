@@ -79,7 +79,7 @@ class Hello
       puts "▲▲▲▲▲▲▲▲▲"
     else
       puts "▼▼▼▼▼▼▼▼▼"
-      puts "*NO-DATA-IS*"
+      puts "***NO-DATA-IS***"
       puts "▲▲▲▲▲▲▲▲▲"
       waitForPutTitle
     end

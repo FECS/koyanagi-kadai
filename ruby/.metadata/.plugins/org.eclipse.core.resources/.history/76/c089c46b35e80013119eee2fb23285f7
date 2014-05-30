@@ -6,7 +6,7 @@ class Hello
   GOOGLE_URL="http://www.example.com/index.html"
   ANIMEMAP_URL="http://animemap.net/api/table/tokyo.json"
   def sayHallo
-    puts "Hello World!"
+    p "Hello World!"
   end
 
   def decord str
@@ -27,10 +27,10 @@ class Hello
       val.chop!
       val.gsub!('"',"")
       #      val.gsub!('\\',"\\")
-      puts "▼▼▼▼▼▼▼▼▼▼▼"
+      p "▼▼▼▼▼▼▼▼▼▼▼"
       hash = Hash.new()
       val.split(",").each{|str|
-        puts str
+        p str
         arr = str.split(":")
         decorded=""
         arr.size.times{|count|
@@ -38,29 +38,29 @@ class Hello
           decorded<<":" unless count==1
           decorded<<arr[count]
         }
-        puts decorded
+        p decorded
         decorded=decord(decorded)
-        puts decorded
+        p decorded
         hash[arr[0]]=decorded
       }
-      puts "▲▲▲▲▲▲▲▲▲"
+      p "▲▲▲▲▲▲▲▲▲"
       @database[hash["title"]]=hash
       #      puts "#{val}\n"
     end
-    puts @database
+    p @database
     waitForPutTitle
   end
 
   def waitForPutTitle
-    puts "▼▼▼▼▼▼▼▼▼"
-    puts "***im ready***"
-    puts "▲▲▲▲▲▲▲▲▲"
-    puts "◆ what u wanna view? input the title in Japanese! (ls:list)"
+    p "▼▼▼▼▼▼▼▼▼"
+    p "***im ready***"
+    p "▲▲▲▲▲▲▲▲▲"
+    p "◆ what u wanna view? input the title in Japanese! (ls:list)"
     command=gets.to_s()
-    puts    command.chop!()
+    p    command.chop!()
     if command == "ls"
       @database.each_key{|key|
-        puts key
+        p key
       }
       waitForPutTitle
     else
@@ -70,19 +70,19 @@ class Hello
 
   def findHash title
     if data=@database[title]
-      puts "▼▼▼▼▼▼▼▼▼"
-      puts "***here's data***"
-      puts "▲▲▲▲▲▲▲▲▲"
-      puts data
-      puts "▼▼▼▼▼▼▼▼▼"
-      puts "***thanks***"
-      puts "▲▲▲▲▲▲▲▲▲"
+      p "▼▼▼▼▼▼▼▼▼"
+      p "***here's data***"
+      p "▲▲▲▲▲▲▲▲▲"
+      p data
+      p "▼▼▼▼▼▼▼▼▼"
+      p "***thanks***"
+      p "▲▲▲▲▲▲▲▲▲"
     else
-      puts "▼▼▼▼▼▼▼▼▼"
-      puts "*NO-DATA-IS*"
-      puts "▲▲▲▲▲▲▲▲▲"
-      waitForPutTitle
+      p "▼▼▼▼▼▼▼▼▼"
+      p "***NO-DATA-IS***"
+      p "▲▲▲▲▲▲▲▲▲"
     end
+    waitForPutTitle
   end
 
   def getJSONinString html=ANIMEMAP_URL

@@ -1781,3 +1781,16 @@ org.eclipse.dltk.core.ModelException: arr [in Task6.rb [in Task6 [in <project ro
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
 !SUBENTRY 1 org.eclipse.dltk.core 4 969 2014-05-31 04:39:55.700
 !MESSAGE arr [in Task6.rb [in Task6 [in <project root> [in RubyTest-Eclipse]]]] does not exist
+
+!ENTRY org.eclipse.dltk.core 4 4 2014-05-31 04:48:21.059
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 17
+	at org.eclipse.dltk.core.search.index.DiskIndex.computeDocumentNames(DiskIndex.java:433)
+	at org.eclipse.dltk.core.search.index.DiskIndex.mergeWith(DiskIndex.java:639)
+	at org.eclipse.dltk.core.search.index.Index.save(Index.java:221)
+	at org.eclipse.dltk.core.search.indexing.IndexManager.saveIndex(IndexManager.java:768)
+	at org.eclipse.dltk.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:830)
+	at org.eclipse.dltk.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:512)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:452)
+	at java.lang.Thread.run(Thread.java:695)
